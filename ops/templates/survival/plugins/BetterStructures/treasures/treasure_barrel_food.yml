@@ -1,0 +1,2261 @@
+isEnabled: true
+mean: 1.0
+standardDeviation: 0.7
+items:
+  common:
+    weight: 60
+    items:
+    - amount: 1-3
+      material: BREAD
+      weight: 6.0
+    - amount: 1-3
+      material: APPLE
+      weight: 6.0
+    - amount: 1-3
+      material: CARROT
+      weight: 6.0
+    - amount: 1-3
+      material: POTATO
+      weight: 6.0
+    - amount: 1-3
+      material: BEETROOT
+      weight: 6.0
+    - amount: 1-4
+      material: SWEET_BERRIES
+      weight: 6.0
+    - amount: 1-4
+      material: GLOW_BERRIES
+      weight: 6.0
+    - amount: 1-4
+      material: MELON_SLICE
+      weight: 6.0
+    - amount: 2-6
+      material: DRIED_KELP
+      weight: 6.0
+    - amount: 2-6
+      material: COOKIE
+      weight: 6.0
+    - amount: 1-3
+      material: BEEF
+      weight: 6.0
+    - amount: 1-3
+      material: PORKCHOP
+      weight: 6.0
+    - amount: 1-3
+      material: MUTTON
+      weight: 6.0
+    - amount: 1-4
+      material: COD
+      weight: 6.0
+    - amount: 1-4
+      material: SALMON
+      weight: 6.0
+    - amount: 1-3
+      material: CHICKEN
+      weight: 3.0
+    - amount: 1-3
+      material: RABBIT
+      weight: 3.0
+    - amount: 1-2
+      material: TROPICAL_FISH
+      weight: 1.0
+    - amount: 1-3
+      material: CHORUS_FRUIT
+      weight: 1.0
+  rare:
+    weight: 30
+    items:
+    - amount: 1-3
+      material: COOKED_BEEF
+      weight: 6.0
+    - amount: 1-3
+      material: COOKED_PORKCHOP
+      weight: 6.0
+    - amount: 1-3
+      material: COOKED_MUTTON
+      weight: 6.0
+    - amount: 1-3
+      material: COOKED_CHICKEN
+      weight: 6.0
+    - amount: 1-3
+      material: COOKED_COD
+      weight: 6.0
+    - amount: 1-3
+      material: COOKED_SALMON
+      weight: 6.0
+    - amount: 1-2
+      material: COOKED_RABBIT
+      weight: 6.0
+    - amount: 1-3
+      material: BAKED_POTATO
+      weight: 6.0
+    - amount: 1-2
+      material: PUMPKIN_PIE
+      weight: 3.0
+    - amount: 1-2
+      material: HONEY_BOTTLE
+      weight: 3.0
+    - amount: 1-1
+      material: MUSHROOM_STEW
+      weight: 3.0
+    - amount: 1-1
+      material: BEETROOT_SOUP
+      weight: 3.0
+    - amount: 1-1
+      material: SUSPICIOUS_STEW
+      weight: 1.0
+    - amount: 1-1
+      material: RABBIT_STEW
+      weight: 1.0
+  epic:
+    weight: 10
+    items:
+    - amount: 1-3
+      material: GOLDEN_CARROT
+      weight: 6.0
+    - amount: 1-2
+      material: GOLDEN_APPLE
+      weight: 3.0
+    - amount: 1-1
+      material: ENCHANTED_GOLDEN_APPLE
+      weight: 1.0
+    - amount: 1-1
+      material: CAKE
+      weight: 1.0
+procedurallyGeneratedItemSettings:
+  golden_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  leather_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  chainmail_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  crossbow:
+    piercing:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    quick_charge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    multishot:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  iron_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  diamond_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  wooden_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  iron_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  iron_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  netherite_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  chainmail_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  diamond_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  golden_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  stone_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  wooden_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  diamond_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  diamond_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  golden_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  golden_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  leather_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  netherite_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  leather_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  stone_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  shield:
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  iron_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  golden_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  leather_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  wooden_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  bow:
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    infinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    power:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    flame:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    punch:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+  stone_sword:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    looting:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    knockback:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fire_aspect:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    sweeping_edge:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  iron_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  diamond_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  diamond_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  golden_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  iron_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  diamond_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  diamond_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  turtle_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  stone_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  golden_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  iron_helmet:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    respiration:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    aqua_affinity:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  golden_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  fishing_rod:
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    luck_of_the_sea:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    lure:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  wooden_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  netherite_boots:
+    soul_speed:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    feather_falling:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    depth_strider:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    frost_walker:
+      minLevel: 1
+      maxLevel: 2
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  golden_axe:
+    bane_of_arthropods:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    smite:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    sharpness:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+  trident:
+    impaling:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    channeling:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    loyalty:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    riptide:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+  wooden_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  diamond_pickaxe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  chainmail_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  chainmail_chestplate:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  iron_leggings:
+    thorns:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    fire_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    swift_sneak:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    projectile_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+    binding_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    blast_protection:
+      minLevel: 1
+      maxLevel: 4
+      chance: 0.2
+  stone_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  iron_shovel:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+  netherite_hoe:
+    efficiency:
+      minLevel: 1
+      maxLevel: 5
+      chance: 0.2
+    fortune:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    unbreaking:
+      minLevel: 1
+      maxLevel: 3
+      chance: 0.2
+    silk_touch:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    vanishing_curse:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2
+    mending:
+      minLevel: 1
+      maxLevel: 1
+      chance: 0.2

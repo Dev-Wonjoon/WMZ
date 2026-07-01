@@ -1,0 +1,11 @@
+name: "&2Foraging"
+gui:
+  icon: diamond_axe
+  position:
+    row: 2
+    column: 8
+  lore:
+    - "&7Chop trees and gather wood."
+    - ""
+    - "&8Click to view collections"
+permission: ""

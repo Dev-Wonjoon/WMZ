@@ -1,0 +1,27 @@
+﻿# Ops-only private/runtime inputs
+ops/vendor/
+ops/secrets/
+*.jar
+
+# Generated server runtime directories
+workbench/
+deploy/*/plugins/
+deploy/*/world/
+deploy/*/world_nether/
+deploy/*/world_the_end/
+deploy/*/logs/
+deploy/*/cache/
+deploy/*/crash-reports/
+servers/*/plugins/
+servers/*/world/
+servers/*/world_nether/
+servers/*/world_the_end/
+servers/*/logs/
+servers/*/cache/
+servers/*/crash-reports/
+
+# Local/editor noise
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

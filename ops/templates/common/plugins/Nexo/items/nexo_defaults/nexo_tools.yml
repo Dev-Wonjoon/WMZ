@@ -1,0 +1,45 @@
+# #### Models made by Workshop Six
+# #### Looking for more cool assets for your server?
+# #### Check out the Workshop Six MCModels store: https://mcmodels.net/vendors/18/workshop-six
+
+forest_axe:
+  itemname: Forest Axe
+  material: NETHERITE_AXE
+  Pack:
+    model: nexo:item/nexo_tools/forest_axe
+forest_hoe:
+  itemname: Forest Hoe
+  material: NETHERITE_HOE
+  Pack:
+    model: nexo:item/nexo_tools/forest_hoe
+forest_pickaxe:
+  itemname: Forest Pickaxe
+  material: NETHERITE_PICKAXE
+  Pack:
+    model: nexo:item/nexo_tools/forest_pickaxe
+forest_shovel:
+  itemname: Forest Shovel
+  material: NETHERITE_SHOVEL
+  Pack:
+    model: nexo:item/nexo_tools/forest_shovel
+forest_sword:
+  itemname: Forest Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nexo:item/nexo_tools/forest_sword
+forest_shield:
+  itemname: Forest Shield
+  material: SHIELD
+  Pack:
+    model: nexo:item/nexo_tools/forest_shield
+    blocking_model: nexo:item/nexo_tools/forest_shield_blocking
+forest_trident:
+  itemname: Forest Trident
+  material: TRIDENT
+  Pack:
+    model: nexo:item/nexo_tools/forest_trident
+  Components:
+    item_model: nexo:forest_trident
+  Mechanics:
+    trident:
+      display_transform: HEAD

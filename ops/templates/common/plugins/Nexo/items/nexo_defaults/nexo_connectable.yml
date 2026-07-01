@@ -1,0 +1,14 @@
+connectable:
+  itemname: Connectable
+  Components:
+    item_model: nexo:connectable/connectable
+  Mechanics:
+    furniture:
+      restricted_rotation: VERY_STRICT
+      seats:
+      - 0,0,0
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      connectable:
+        type: ITEM_MODEL

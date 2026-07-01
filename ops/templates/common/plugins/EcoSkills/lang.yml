@@ -1,0 +1,47 @@
+messages:
+  prefix: "&#ff00ae&lEcoSkills&r &8» &r"
+  no-permission: "&cYou don't have permission to do this!"
+  not-player: "&cThis command must be run by a player"
+  invalid-command: "&cUnknown subcommand!"
+  reloaded: "Reloaded in %time%ms! Loaded %skills% skills and %stats% stats."
+
+  invalid-player: "&cInvalid player!"
+  invalid-skill: "&cInvalid skill!"
+  reset-player: "&fReset player!"
+  recounted-player: "&fRecounted player!"
+  invalid-skill-stat-magic: "&cInvalid skill, stat or magic ID!"
+  invalid-amount: "&cInvalid amount!"
+  gave-skill-xp: "Gave %player% %amount% %obj% experience!"
+  gained-skill-xp: "Gave %player% %amount% %obj% experience (with notification)!"
+  set-skill-level: "Set %player% %obj% level to %amount%!"
+  gave-stat: "Gave %player% %amount% %obj%&r!"
+  set-stat: "Set %player% %obj% to %amount%!"
+  gave-magic: "Gave %player% %amount% %obj%&r!"
+  enabled-actionbar: "&fYou have &aenabled &fthe action bar!"
+  disabled-actionbar: "&fYou have &cdisabled &fthe action bar!"
+  enabled-xp-gain-sound: "&fYou have &aenabled &fXP gain sounds!"
+  disabled-xp-gain-sound: "&fYou have &cdisabled &fXP gain sounds!"
+  actionbar-disabled: "&cThe action bar is disabled on this server."
+  resetting-all-players: "&fResetting all players... (this may take a while)"
+  reset-all-players: "&fReset all players!"
+  recounting-all-players: "&fRecounting all players... (this may take a while)"
+  recounted-all-players: "&fRecounted all players!"
+
+learning-skill: "Learning New Skill..."
+
+line-wrap-color: "&8"
+
+top-line-format: "%rank%. %player% - %level%"
+top:
+  empty-position: "&cN/A"
+  format:
+    - "---- Skills Leaderboard ----"
+    - "%lines%"
+
+menu:
+  title: "Your Skills"
+
+stats-gui:
+  title: "Your Stats"
+
+infinity: "∞"

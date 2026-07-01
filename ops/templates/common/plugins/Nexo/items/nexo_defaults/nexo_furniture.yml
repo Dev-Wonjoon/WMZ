@@ -1,0 +1,215 @@
+# #### Models made by Workshop Six
+# #### Looking for more cool assets for your server?
+# #### Check out the Workshop Six MCModels store: https://mcmodels.net/vendors/18/workshop-six
+
+arm_chair:
+  itemname: Arm Chair
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/arm_chair
+    dyeable_model: nexo:item/nexo_furniture/arm_chair_dyeable
+  Mechanics:
+    furniture:
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+      seats:
+      - 0,0,0
+coffee_table:
+  itemname: Coffee Table
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/coffee_table
+    dyeable_model: nexo:item/nexo_furniture/coffee_table_dyeable
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+        - 1,0,0
+end_table:
+  itemname: End Table
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/end_table
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+sofa:
+  itemname: Sofa
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/sofa
+    dyeable_model: nexo:item/nexo_furniture/sofa_dyeable
+  Mechanics:
+    furniture:
+      seats:
+      - -0.7,0.0,0
+      - 0.7,0.0,0
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+        - 1,0,0
+        - -1,0,0
+storage_chest:
+  itemname: Storage Chest
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/storage_chest
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+        - 1,0,0
+      drop:
+        silktouch: false
+        loots:
+        - nexo_item: storage_chest
+          probability: 1.0
+      storage:
+        type: STORAGE
+        rows: 6
+        title: Storage Chest
+        open_sound: entity.chest.open
+        close_sound: entity.chest.close
+table_lamp:
+  itemname: Table Lamp
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/table_lamp
+    dyeable_model: nexo:item/nexo_furniture/table_lamp_dyeable
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+      lights:
+        toggleable: true
+        lights:
+        - 0,1,0 15
+double_bed:
+  itemname: Double Bed
+  material: PAPER
+  Pack:
+    model: nexo:item/nexo_furniture/double_bed
+    dyeable_model: nexo:item/nexo_furniture/double_bed_dyeable
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: VERY_STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0..1,0,0..1
+      beds:
+      - 0,0,1 true true
+      - 1,0,1 true true
+large_wooden_door:
+  itemname: Large Wooden Door
+  Pack:
+    model: nexo:item/nexo_furniture/large_wooden_door
+    custom_model_data: 1056
+  Mechanics:
+    furniture:
+      limited_placing:
+        floor: true
+      hitbox:
+        barriers: 0..1,0..2,0
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      properties:
+        translation: 0,1,0
+        delay: 4t
+      door:
+        open_sound: block.wooden_door.open
+        close_sound: block.wooden_door.close
+        toggle_hitbox_on_open: true
+        open_properties:
+          translation: -0.85,1,0
+large_wooden_sliding_door:
+  itemname: Large Wooden Sliding Door
+  Pack:
+    model: nexo:item/nexo_furniture/large_wooden_door
+    custom_model_data: 1056
+  Mechanics:
+    furniture:
+      limited_placing:
+        floor: true
+      hitbox:
+        barriers: 0..1,0..2,0
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      properties:
+        translation: 0,1,0
+        delay: 8t
+      door:
+        is_sliding: true
+        open_sound: block.wooden_door.open
+        close_sound: block.wooden_door.close
+        toggle_hitbox_on_open: true
+        open_properties:
+          translation: -2,1,0

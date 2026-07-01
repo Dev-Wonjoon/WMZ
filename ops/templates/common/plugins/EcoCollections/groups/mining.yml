@@ -1,0 +1,11 @@
+name: "&bMining"
+gui:
+  icon: diamond_pickaxe
+  position:
+    row: 2
+    column: 4
+  lore:
+    - "&7Mine ores and collect stone."
+    - ""
+    - "&8Click to view collections"
+permission: ""

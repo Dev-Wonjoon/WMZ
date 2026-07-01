@@ -1,0 +1,23 @@
+name: "<gradient:#373B44>Nautical</gradient:#4286f4>"
+
+description:
+  - "&a+20% &fDamage in water"
+
+targets:
+  - melee
+  - bow
+  - trident
+
+effects:
+  - id: damage_multiplier
+    args:
+      multiplier: 1.2
+    triggers:
+      - melee_attack
+      - bow_attack
+      - trident_attack
+
+conditions:
+  - id: in_water
+    args:
+      in_water: true

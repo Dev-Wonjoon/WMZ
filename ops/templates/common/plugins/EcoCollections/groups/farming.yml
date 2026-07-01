@@ -1,0 +1,11 @@
+name: "&aFarming"
+gui:
+  icon: golden_hoe
+  position:
+    row: 2
+    column: 2
+  lore:
+    - "&7Plant, harvest, and farm."
+    - ""
+    - "&8Click to view collections"
+permission: ""

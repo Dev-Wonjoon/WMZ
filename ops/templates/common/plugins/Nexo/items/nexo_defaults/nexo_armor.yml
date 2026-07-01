@@ -1,0 +1,79 @@
+# #### Models made by Workshop Six
+# #### Looking for more cool assets for your server?
+# #### Check out the Workshop Six MCModels store: https://mcmodels.net/vendors/18/workshop-six
+
+forest_helmet:
+  itemname: Forest Helmet
+  material: CHAINMAIL_HELMET
+  Pack:
+    model: nexo:item/nexo_armor/forest_helmet
+  Components:
+    equippable:
+      slot: HEAD
+forest_chestplate:
+  itemname: Forest Chestplate
+  material: CHAINMAIL_CHESTPLATE
+  Pack:
+    texture: nexo:item/nexo_armor/forest_chestplate
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:forest
+forest_leggings:
+  itemname: Forest Leggings
+  material: CHAINMAIL_LEGGINGS
+  Pack:
+    texture: nexo:item/nexo_armor/forest_leggings
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:forest
+forest_boots:
+  itemname: Forest Boots
+  material: CHAINMAIL_BOOTS
+  Pack:
+    texture: nexo:item/nexo_armor/forest_boots
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:forest
+
+# 1.21.2+ Only
+forest_elytra:
+  itemname: Forest Elytra
+  material: ELYTRA
+  Pack:
+    texture: nexo:item/nexo_armor/forest_elytra_icon
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:forest_elytra
+forest_wolf_armor:
+  itemname: Forest Wolf Armor
+  material: WOLF_ARMOR
+  Pack:
+    texture: nexo:item/nexo_armor/forest_wolf_armor_icon
+  color: 160,101,64
+  Components:
+    equippable:
+      slot: BODY
+      asset_id: nexo:forest
+      allowed_entity_types:
+      - WOLF
+forest_llama_armor:
+  itemname: Forest Llama Carpet
+  material: PAPER
+  Pack:
+    texture: nexo:item/nexo_armor/forest_llama_armor_icon
+forest_horse_armor:
+  itemname: Forest Horse Armor
+  material: DIAMOND_HORSE_ARMOR
+  Pack:
+    texture: nexo:item/nexo_armor/forest_horse_armor_icon
+  Components:
+    equippable:
+      slot: BODY
+      asset_id: nexo:forest
+      allowed_entity_types:
+      - HORSE
+      - ZOMBIE_HORSE

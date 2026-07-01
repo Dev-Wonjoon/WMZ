@@ -1,0 +1,20 @@
+name: "<gradient:#a73737>Tough</gradient:#7a2828>"
+
+description:
+  - "&c+8% &fDamage Resistance"
+  - "&a-5% &fMovement Speed"
+
+targets:
+  - armor
+
+effects:
+  - id: damage_multiplier
+    args:
+      multiplier: 0.92
+    triggers:
+      - take_damage
+  - id: movement_speed_multiplier
+    args:
+      multiplier: 0.95
+
+conditions: []

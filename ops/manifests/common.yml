@@ -1,0 +1,81 @@
+# Common plugins shared by every server.
+
+type: purpur
+server: purpur-26.1.2-2592.jar
+
+plugins:
+  - id: luckperms
+    file: LuckPerms-Bukkit-5.5.0.jar
+    sha256: 62878cd55589a3e1fb476531a1737c71cd15ac62bf0b45f03d02913134a5bb00
+  - id: vault
+    file: Vault-1.7.4.jar
+    sha256: e31f192d330d86584afd53eedc99765d2232eab8c7a250ecace4cf7185bfc463
+  - id: eco
+    file: eco-2026.25-all.jar
+    sha256: 11f9f2561bd63dce5ba66e87c3e769a042a713c9b2520c1b5ed7bc04e50664e2
+  - id: ecoenchants
+    file: EcoEnchants-2026.25.jar
+    sha256: 86f8a8a178e5cefd55d0ab4c03641cd857e33112b5e85620c7e4666c5b11be8f
+  - id: eco-collections
+    file: EcoCollections-2026.25.jar
+    sha256: fa79808269dca0892cd3a26af1186930430e577a0411649f77ed4affa090f20e
+  - id: eco-pet
+    file: EcoPets-2026.25.jar
+    sha256: 2178890db901a00aeff4e20f20234a6502de8ae4f3458ab20528a14e89de9ba3
+  - id: eco-skills
+    file: EcoSkills-2026.25.jar
+    sha256: e0269119d9e3b6e08568a5efef73edd988e08d506b8938d9919b583e3e76566b
+  - id: talismans
+    file: Talismans-2026.25.jar
+    sha256: f8930e75ed088831e46aed2e2e95d05d0be2f38473445f4fb892d83009aa08ae
+  - id: cmi
+    file: CMI-9.8.8.2.jar
+    sha256: b6b9c594b75c799fc3b9683865c6cab0350a8c445047f1172fc35f4ef50158b0
+  - id: cmilib
+    file: CMILib1.5.9.8.jar
+    sha256: c845ea3370e01a9f54c7d0df9fbb54b357d3532e73069f3eed74cb471e5654ec
+  - id: decent-holograms
+    file: DecentHolograms-2.10.1.jar
+    sha256: e247b7362c277dad0596cb48b5d1570b1002fba014a5afd8458d978963a253b4
+  - id: worldguard
+    file: worldguard-bukkit-7.0.17.jar
+    sha256: 3f14562509bf01e7680571b6f56932239157ff938f257c3226df3b4088ae54f2
+  - id: husk-home
+    file: HuskHomes-Paper-4.11-fdaf7fd.jar
+    sha256: 1dbad00e5a3c489dd0d2491bb1e4dca5292418c441e339c6d4d4e27d138d0be4
+  - id: husk-sync
+    file: HuskSync-Bukkit-3.9.0+mc.26.1.2.jar
+    sha256: d5d475284450b1abd89800ea27c0311ad2b62a472b706496ede38487f9f2b818
+  - id: nexo
+    file: nexo-1.24.jar
+    sha256: be4fb0eea9a296799e624e85fce33bda5a39dc13940443c8c48ce41966f15b93
+  - id: protocollib
+    file: ProtocolLib.jar
+    sha256: a0a985cca91c94fcb9160fd9cac4c0da1307511e53ebf89c8b75667c31205dde
+  - id: ecoarmor
+    file: EcoArmor-2026.25.jar
+    sha256: 9201da3ae790a6725c68f2740567334566beeb2645f84e315fd6dbbac9facfb2
+  - id: ecoitems
+    file: EcoItems-2026.25.jar
+    sha256: 0d3c35b71c5875e72ba25ccfb05e20b0144f6ea49bbe445d7d77d37fb60b3509
+  - id: economyshopgui
+    file: EconomyShopGUI-7.1.0.jar
+    sha256: 730e600d00d6732f845a86eb334a7383007e43f580999bd7a5eabe9b4fd1754e
+  - id: headdatabase
+    file: HeadDatabase-4.23.0.jar
+    sha256: 698a1b12fa4a7616ebe367a439df6704dd39d7f0ae9bc9303392229cbb45fe26
+  - id: libsdisguises
+    file: LibsDisguises-11.0.18-Premium.jar
+    sha256: aaf32f893a6b4694bf5ae93f2447989e7b7b3e12e2687f4730cb103c1bb36979
+  - id: mythicmobs
+    file: MythicMobs-5.12.1.jar
+    sha256: 35cdb3f9e5040b6609c4a6788e6233c227aaedd654aab63ed9cce8e257784289
+  - id: reforges
+    file: Reforges-2026.25.jar
+    sha256: 782f77f0dd8876ab94d1a5ec5a4d636d7e3e08b3d23b005e01dc6f237eced3ef
+  - id: skript
+    file: Skript-2.15.3.jar
+    sha256: 49dccd2d2cfec4ef2354f62e3d76039d1d041dc5f5ac29e84f9dab894e3730b9
+  - id: worldedit
+    file: worldedit-bukkit-7.4.3.jar
+    sha256: 2499a78d1a7ac340c37c24bd0d851118dae767c48bdbed699799f307b5f24b7b

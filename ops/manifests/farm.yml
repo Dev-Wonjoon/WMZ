@@ -1,0 +1,10 @@
+# Manifest for the farm server.
+type: purpur
+extends:
+  - common
+
+plugins:
+  - id: asp
+    file: asp-plugin-4.2.0-SNAPSHOT.jar
+  - id: slimeworld
+    file: SSBSlimeWorldManager-2026.1.jar

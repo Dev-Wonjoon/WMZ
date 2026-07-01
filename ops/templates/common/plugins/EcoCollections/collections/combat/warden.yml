@@ -1,0 +1,53 @@
+name: "&0Warden"
+group: combat
+hide-before-tier-1: false
+hide-when-locked: false
+
+description:
+  - "&7Kill wardens to progress."
+  - "&7Tier: &e%tier_numeral%&7/&e%max_tier_numeral%"
+  - "&7Progress: &e%count%&7/&e%required% &8(&e%percent%%&8)"
+
+gui:
+  icon: sculk_catalyst
+  position:
+    row: 4
+    column: 7
+  lore:
+    - "%description%"
+    - ""
+    - "&8Click to view tiers"
+
+tier-requirements:
+  - 1
+  - 2
+  - 5
+  - 10
+  - 25
+  - 50
+  - 100
+  - 250
+  - 500
+  - 1000
+
+count-methods:
+  - trigger: kill
+    value: 1
+    filters:
+      entities:
+        - warden
+
+unlock-conditions: []
+conditions: []
+
+tier-up-effects:
+  - tier: all
+    effects:
+      - id: send_message
+        args:
+          message: "&6&0Warden &e%tier_numeral% &freached!"
+
+completion-effects:
+  - id: broadcast
+    args:
+      message: "&6%player% &fhas maxed the &e&0Warden &fcollection!"

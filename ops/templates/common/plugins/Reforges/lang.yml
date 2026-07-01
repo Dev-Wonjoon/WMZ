@@ -1,0 +1,19 @@
+messages:
+  prefix: "&3&lReforges&r &8» &r"
+  no-permission: "&cYou don't have permission to do this!"
+  not-player: "&cThis command must be run by a player"
+  invalid-command: "&cUnknown subcommand!"
+  reloaded: "Reloaded in %time%ms! Loaded %count% reforges."
+
+  applied-reforge: "Applied %reforge%&r reforge!"
+  needs-player: "&cYou must specify a player"
+  invalid-player: "&cInvalid player!"
+  needs-stone: "&cYou must specify a reforge stone"
+  invalid-stone: "&cInvalid reforge!"
+  give-success: "Gave &a%reforge%&r reforge stone to &a%recipient%"
+  invalid-reforge: "&cInvalid reforge!"
+  needs-reforge: "&cYou must specify a reforge"
+
+menu:
+  title: "Reforge Item"
+  close: "&cClose"

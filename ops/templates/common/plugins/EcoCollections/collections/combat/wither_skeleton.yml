@@ -1,0 +1,54 @@
+name: "&8Wither Skeleton"
+group: combat
+hide-before-tier-1: false
+hide-when-locked: false
+
+description:
+  - "&7Kill wither skeletons to progress."
+  - "&7Tier: &e%tier_numeral%&7/&e%max_tier_numeral%"
+  - "&7Progress: &e%count%&7/&e%required% &8(&e%percent%%&8)"
+
+gui:
+  icon: wither_skeleton_skull
+  position:
+    row: 2
+    column: 8
+  lore:
+    - "%description%"
+    - ""
+    - "&8Click to view tiers"
+
+tier-requirements:
+  - 10
+  - 25
+  - 50
+  - 100
+  - 250
+  - 500
+  - 1000
+  - 2500
+  - 5000
+  - 10000
+
+count-methods:
+  - trigger: kill
+    value: 1
+    filters:
+      entities:
+        - wither_skeleton
+      from_spawner: false
+
+unlock-conditions: []
+conditions: []
+
+tier-up-effects:
+  - tier: all
+    effects:
+      - id: send_message
+        args:
+          message: "&6&8Wither Skeleton &e%tier_numeral% &freached!"
+
+completion-effects:
+  - id: broadcast
+    args:
+      message: "&6%player% &fhas maxed the &e&8Wither Skeleton &fcollection!"

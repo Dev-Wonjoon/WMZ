@@ -1,0 +1,11 @@
+name: "&3Fishing"
+gui:
+  icon: fishing_rod
+  position:
+    row: 4
+    column: 5
+  lore:
+    - "&7Cast your line and reel in catches."
+    - ""
+    - "&8Click to view collections"
+permission: ""

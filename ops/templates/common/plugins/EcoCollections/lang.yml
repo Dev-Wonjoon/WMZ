@@ -1,0 +1,48 @@
+messages:
+  prefix: "&f[&6EcoCollections&f] "
+  no-permission: "&cYou don't have permission to do that!"
+  not-player: "&cThis command can only be run by a player!"
+  tier-up:
+    chat: "&6&lCOLLECTION TIER UP! &r&f%collection_name% &7→ &e%tier_numeral%"
+    title: "&6&l%collection_name%"
+    subtitle: "&fTier &e%previous_tier_numeral% &7➜ &e%tier_numeral%"
+  complete:
+    chat: "&6&lCOLLECTION MAXED! &r&f%collection_name%"
+    title: "&6&lMAXED!"
+    subtitle: "&f%collection_name%"
+    broadcast: "&6%player% &fhas maxed the &e%collection_name% &fcollection!"
+  unlock:
+    chat: "&a&lUNLOCKED! &r&fYou can now progress &e%collection_name%&f."
+    title: "&a&lUnlocked"
+    subtitle: "&f%collection_name%"
+
+placeholders:
+  completed-true: "&aYes"
+  completed-false: "&cNo"
+  unlocked-true: "&aYes"
+  unlocked-false: "&cNo"
+  max-tier: "&6MAX"
+  locked-name: "&7&l? ? ?"
+  unlock-requirement-line: "&8» &7%requirement%"
+
+top:
+  empty-position: "&7—"
+
+commands:
+  reload-success: "&aReloaded EcoCollections."
+  give-success: "&aGave &e%amount% &ato &e%player%&a's &e%collection% &acollection."
+  set-success: "&aSet &e%player%&a's &e%collection% &acount to &e%amount%&a."
+  settier-success: "&aSet &e%player%&a's &e%collection% &atier to &e%tier%&a."
+  reset-success: "&aReset &e%player%&a's &e%collection% &acollection."
+  unlock-success: "&aUnlocked &e%collection% &afor &e%player%&a."
+  already-unlocked: "&e%player%&c's &e%collection% &cis already unlocked."
+  no-such-collection: "&cNo collection with id &e%id%&c."
+  no-such-player: "&cNo player with name &e%name%&c."
+
+groups:
+  uncategorized-name: "&7Uncategorized"
+  default-group-name: "&7Collections"
+
+leaderboard-rank-exact: "&7Your rank: &e#%rank%"
+leaderboard-rank-percent: "&7Your rank: &eTop %percent%%"
+leaderboard-rank-unranked: "&7Your rank: &8Unranked"

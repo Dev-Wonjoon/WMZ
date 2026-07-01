@@ -1,0 +1,8 @@
+type: purpur
+
+extends:
+  - common
+
+plugins:
+  - id: better-structures
+    file: BetterStructures.jar

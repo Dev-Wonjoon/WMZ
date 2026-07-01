@@ -1,0 +1,13 @@
+services:
+  survival:
+    image: eclipse-temurin:21
+    working_dir: /server
+    volumes:
+      - ./deploy/survival:/server
+    command: ["java", "-Xms2G", "-Xmx4G", "-jar", "server.jar", "nogui"]
+    stdin_open: true
+    tty: true
+    stop_grace_period: 30s
+    restart: unless-stopped
+    ports:
+      - "25565:25565"

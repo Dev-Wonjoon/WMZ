@@ -1,0 +1,6 @@
+# Manifest for the test server.
+type: purpur
+extends:
+  - common
+
+plugins: []

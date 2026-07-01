@@ -1,0 +1,6 @@
+# Manifest for the dungeon server.
+type: purpur
+extends:
+  - common
+
+plugins: []

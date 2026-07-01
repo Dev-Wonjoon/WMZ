@@ -1,0 +1,11 @@
+name: "&cCombat"
+gui:
+  icon: diamond_sword
+  position:
+    row: 2
+    column: 6
+  lore:
+    - "&7Slay monsters and hostile mobs."
+    - ""
+    - "&8Click to view collections"
+permission: ""

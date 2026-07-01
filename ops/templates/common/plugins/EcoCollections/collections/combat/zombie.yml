@@ -1,0 +1,54 @@
+name: "&2Zombie"
+group: combat
+hide-before-tier-1: false
+hide-when-locked: false
+
+description:
+  - "&7Kill zombies to progress."
+  - "&7Tier: &e%tier_numeral%&7/&e%max_tier_numeral%"
+  - "&7Progress: &e%count%&7/&e%required% &8(&e%percent%%&8)"
+
+gui:
+  icon: rotten_flesh
+  position:
+    row: 2
+    column: 1
+  lore:
+    - "%description%"
+    - ""
+    - "&8Click to view tiers"
+
+tier-requirements:
+  - 50
+  - 100
+  - 250
+  - 500
+  - 1000
+  - 2500
+  - 5000
+  - 10000
+  - 25000
+  - 50000
+
+count-methods:
+  - trigger: kill
+    value: 1
+    filters:
+      entities:
+        - zombie
+      from_spawner: false
+
+unlock-conditions: []
+conditions: []
+
+tier-up-effects:
+  - tier: all
+    effects:
+      - id: send_message
+        args:
+          message: "&6&2Zombie &e%tier_numeral% &freached!"
+
+completion-effects:
+  - id: broadcast
+    args:
+      message: "&6%player% &fhas maxed the &e&2Zombie &fcollection!"

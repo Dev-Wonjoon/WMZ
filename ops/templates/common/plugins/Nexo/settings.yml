@@ -1,0 +1,144 @@
+debug: false
+Plugin:
+  language: english
+  keep_this_up_to_date: true
+  formatting:
+    anvil: true
+    signs: true
+    chats:
+      player_chat: true
+      system_chat: true
+      standard_tags: false
+    translatable: false
+    books: true
+    tablist: true
+    bossbar: true
+    scoreboard: true
+    items: true
+    cursor: false
+    villagers: true
+    packet_events: true
+    entity_data: true
+    dialog: true
+Experimental:
+  packets:
+    disable_netty_injection: false
+WorldEdit:
+  fawe_hook: false
+  customblock_mechanic: false
+  furniture_mechanic: false
+Glyphs:
+  emoji_list_permission_only: true
+  unicode_completions: false
+  emoji_book_size: 255
+  default_permission: nexo.glyphs.<glyphid>
+  default_font: nexo:default
+  default_shadow_color: '#00000000'
+  hover_text: ''
+  shift_font: nexo:shift
+  default_gif_type: SPRITE
+ConfigTools:
+  generate_default_configs: true
+  disable_automatic_model_data: false
+  disable_automatic_glyph_code: false
+  initial_custom_model_data: 1000
+  skipped_model_data_numbers: []
+  error_item:
+    material: PODZOL
+    injectId: false
+Furniture:
+  remove_invalid_furniture: false
+  allowed_gamemodes_for_rotation:
+  - SURVIVAL
+  - CREATIVE
+  invalid_furniture_item:
+    material: BARRIER
+  anti_cheat:
+    spartan_hook: false
+    vulcan_hook: false
+CustomArmor:
+  type: COMPONENT
+  auto_assign_settings: true
+ItemUpdater:
+  update_items: true
+  update_items_on_reload: true
+  update_tile_entity_contents: true
+  update_entity_contents: true
+  override_item_lore: false
+Misc:
+  hide_scoreboard_numbers: false
+  hide_scoreboard_background: false
+  hide_tablist_background: false
+  block_other_resourcepacks: false
+  default_language_key: en_us
+Recipes:
+  reset_recipes: true
+  add_recipes_to_book: true
+  default_allow_in_vanilla_recipes: false
+  require_player_if_permission: true
+  keep_track_of_player_furnace: false
+  furnace_cooldown_duration: 1s
+Pack:
+  generation:
+    generate_pack: true
+    output_path: plugins/Nexo/pack/pack.zip
+    prefer_item_models: true
+    minimize_json: true
+    read_lenient: true
+    legacy_atlas: true
+    force_oversized_in_gui: false
+    merge_textures: NONE
+    excluded_file_extensions:
+    - .zip
+    - .tar.gz
+    skip_unsupported_overlays: false
+    packsquash:
+      enabled: false
+      executable_path: plugins/Nexo/pack/packsquash/packsquash
+      settings_path: plugins/Nexo/pack/packsquash/packsquash.toml
+      cache_size: 5
+  obfuscation:
+    type: SIMPLE
+    cache: true
+  import:
+    default_assets: true
+    external_packs: true
+    from_location: []
+    from_url: []
+    external_pack_order: []
+    model_engine: true
+  validate:
+    models: true
+    fonts: true
+    atlas: true
+    languages: true
+    texture_mipnap: true
+  server:
+    type: POLYMATH
+    selfhost:
+      port: 8082
+      public_address: ''
+      dispatch_threads: 10
+    polymath:
+      server: atlas.nexomc.com
+      secret: nexomc
+    lobfile:
+      api_key: API-KEY
+    s3:
+      public_url: https://fsn1.your-objectstorage.com
+      endpoint_url: https://fsn1.your-objectstorage.com
+      region: eu-central-1
+      bucket: nexo-storage
+      secret_key: SECRET
+      access_key: ACCESS
+      url_expiration: 7d
+      path_style: false
+      chunked_encoding: true
+  dispatch:
+    send_pre_join: true
+    send_on_join: false
+    send_on_reload: true
+    delay: -1
+    mandatory: true
+    prompt: <#fa4943>Accept the ResourcePack for the optimal <b><gradient:#46C392:#7FC794>Nexo</b></gradient>
+      experience

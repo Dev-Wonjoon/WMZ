@@ -1,0 +1,53 @@
+name: "&fQuartz"
+group: mining
+hide-before-tier-1: false
+hide-when-locked: false
+
+description:
+  - "&7Mine nether quartz to progress."
+  - "&7Tier: &e%tier_numeral%&7/&e%max_tier_numeral%"
+  - "&7Progress: &e%count%&7/&e%required% &8(&e%percent%%&8)"
+
+gui:
+  icon: quartz
+  position:
+    row: 3
+    column: 2
+  lore:
+    - "%description%"
+    - ""
+    - "&8Click to view tiers"
+
+tier-requirements:
+  - 25
+  - 50
+  - 125
+  - 250
+  - 500
+  - 1250
+  - 2500
+  - 5000
+  - 12500
+  - 25000
+
+count-methods:
+  - trigger: mine_block
+    filters:
+      player_placed: false
+      blocks:
+        - nether_quartz_ore
+
+unlock-conditions: []
+conditions: []
+
+tier-up-effects:
+  - tier: all
+    effects:
+      - id: send_message
+        args:
+          message: "&6&fQuartz &e%tier_numeral% &freached!"
+
+completion-effects:
+  - id: broadcast
+    args:
+      message: "&6%player% &fhas maxed the &e&fQuartz &fcollection!"
