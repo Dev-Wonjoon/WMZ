@@ -17,7 +17,7 @@ ops/templates           common 및 서버별 config 템플릿
 ops/vendor/plugins      플러그인 jar 보관소, Git에 커밋하지 않음
 ops/vendor/server       서버/proxy jar 보관소, Git에 커밋하지 않음
 ops/tools               실제 Python 도구
-ops/scripts             Bash 실행 wrapper(.sh)
+ops/scripts             POSIX sh 호환 실행 wrapper(.sh)
 ops/secrets             비밀값/env, Git에 커밋하지 않음
 workbench/bootstrap/*   기본 config 생성을 위한 작업장
 workbench/build/*       서버 빌드 테스트용 작업장
@@ -34,7 +34,7 @@ common -> dungeon
 
 ## 실행 방식
 
-Windows에서는 Git Bash를 열어서 실행하고, Linux에서는 일반 Bash에서 실행합니다.
+Windows에서는 Git Bash를 열어서 실행하고, Linux에서는 일반 `sh` 또는 Bash에서 실행합니다.
 실제 기능은 `ops/tools/*.py`에 있고, `ops/scripts/*.sh`는 같은 Python 도구를 호출하는 얇은 wrapper입니다.
 
 Windows Git Bash:
@@ -44,10 +44,16 @@ cd /c/Users/dnjsw/Desktop/develope/wmz
 ./ops/scripts/server.sh check survival
 ```
 
-Linux Bash:
+Linux sh:
 
 ```bash
 cd /path/to/wmz
+sh ops/scripts/server.sh check survival
+```
+
+직접 실행 권한이 있으면 이렇게 실행해도 됩니다.
+
+```bash
 ./ops/scripts/server.sh check survival
 ```
 
@@ -69,7 +75,7 @@ workbench.sh
 ./ops/scripts/config.sh apply survival plugins/EcoItems --dry-run
 ```
 
-Git Bash에서 `python3`가 WindowsApps alias로 잡히는 경우가 있어, `.sh` wrapper는 Python 후보를 실제로 실행해 보고 사용할 수 있는 실행기만 선택합니다.
+Git Bash에서 `python3`가 WindowsApps alias로 잡히는 경우가 있어, `.sh` wrapper는 Python 후보를 실제로 실행해 보고 사용할 수 있는 실행기만 선택합니다. wrapper는 `sh ops/scripts/manifest.sh`처럼 `sh`로 직접 실행해도 동작하도록 Bash 전용 문법을 쓰지 않습니다.
 
 ## 기본 작업 흐름
 

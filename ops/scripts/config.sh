@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+set -eu
 
-script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+script_dir="$(CDPATH= cd "$(dirname "$0")" && pwd -P)"
 exec "$script_dir/_run_tool.sh" config_tool.py "$@"
