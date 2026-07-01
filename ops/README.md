@@ -55,6 +55,7 @@ cd /path/to/wmz
 
 ```text
 config.sh
+live-config.sh
 manifest.sh
 plugins.sh
 server.sh
@@ -418,6 +419,59 @@ plugin jar만 적용:
 일반적인 서버 빌드는 `server.sh build`를 사용합니다. jar만 따로 확인하거나
 디버깅할 때 `plugins.sh`를 사용합니다.
 
+## live-config.sh
+
+`live-config.sh`는 templates에서 수정한 플러그인 config를 deploy 서버에 적용하고,
+실행 중인 Docker 서버에 reload 명령을 보냅니다.
+
+명령 순서는 플러그인 이름이 먼저이고, 서버 이름은 선택입니다.
+
+```bash
+./ops/scripts/live-config.sh push EcoItems --dry-run
+./ops/scripts/live-config.sh push EcoItems
+./ops/scripts/live-config.sh push EcoItems survival --dry-run
+./ops/scripts/live-config.sh push EcoItems survival
+```
+
+서버 이름을 적지 않으면 `docker-compose.yml`의 service 이름과 같은 manifest를
+대상으로 잡습니다. 현재 compose에 `survival`만 있으면 survival만 대상입니다.
+나중에 compose에 `farm`, `dungeon` 서비스를 추가하면 같은 명령으로 함께 처리됩니다.
+
+하는 일:
+
+```text
+templates/common + templates/<server>에서 해당 plugin config 적용
+deploy/<server>/plugins/<PluginName> 갱신
+docker compose exec로 서버 콘솔에 reload 명령 전송
+```
+
+기본 reload 명령은 플러그인 이름을 소문자 명령으로 바꿔서 추론합니다.
+
+```text
+EcoItems         -> ecoitems reload
+EcoCollections   -> ecocollections reload
+BetterStructures -> betterstructures reload
+```
+
+명령이 다르면 `--command`로 직접 지정합니다. 여러 번 지정할 수도 있습니다.
+
+```bash
+./ops/scripts/live-config.sh push EcoItems survival --command "ecoitems reload"
+./ops/scripts/live-config.sh push Nexo survival --command "nexo reload"
+```
+
+config 적용만 하고 reload는 보내지 않기:
+
+```bash
+./ops/scripts/live-config.sh push EcoItems survival --apply-only
+```
+
+config 적용 없이 reload 명령만 보내기:
+
+```bash
+./ops/scripts/live-config.sh push EcoItems survival --reload-only
+```
+
 ## templates 상속 규칙
 
 common templates가 먼저 적용되고, 서버별 templates가 나중에 적용됩니다.
@@ -498,6 +552,13 @@ templates에서 config를 수정한 뒤 deploy 서버에 적용할 때:
 ./ops/scripts/server.sh build survival plugins/EcoItems
 ```
 
+서버를 재시작하지 않고 플러그인 reload로 반영할 수 있는 config라면:
+
+```bash
+./ops/scripts/live-config.sh push EcoItems survival --dry-run
+./ops/scripts/live-config.sh push EcoItems survival
+```
+
 여러 플러그인 config를 한 번에 적용할 수도 있습니다.
 
 ```bash
@@ -505,8 +566,13 @@ templates에서 config를 수정한 뒤 deploy 서버에 적용할 때:
 ./ops/scripts/server.sh build survival plugins/EcoItems plugins/EcoCollections plugins/Talismans
 ```
 
-hot reload는 아직 별도 통합 명령으로 구현하지 않았습니다. 나중에
-`live-config.sh push survival EcoItems` 같은 명령으로 붙이는 방향이 좋습니다.
+핫 리로드 명령은 플러그인 이름을 먼저 씁니다. 서버를 생략하면 compose에 정의된
+대상 서버 전체에 적용합니다.
+
+```bash
+./ops/scripts/live-config.sh push EcoItems
+./ops/scripts/live-config.sh push EcoItems survival
+```
 
 
 
