@@ -10,4 +10,4 @@ services:
     stop_grace_period: 30s
     restart: unless-stopped
     ports:
-      - "25565:25565"
+      - "25564:25564"

@@ -1,0 +1,1532 @@
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/docker-compose.yml b/docker-compose.yml
+old mode 100644
+new mode 100755
+index 08a9e11..ec17e4c
+--- a/docker-compose.yml
++++ b/docker-compose.yml
+@@ -10,4 +10,4 @@ services:
+     stop_grace_period: 30s
+     restart: unless-stopped
+     ports:
+-      - "25565:25565"
+\ No newline at end of file
++      - "25564:25564"
+\ No newline at end of file
+diff --git a/ops/README.md b/ops/README.md
+old mode 100644
+new mode 100755
+diff --git a/ops/manifests/common.yml b/ops/manifests/common.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/manifests/dungeon.yml b/ops/manifests/dungeon.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/manifests/farm.yml b/ops/manifests/farm.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/manifests/survival.yml b/ops/manifests/survival.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/manifests/test.yml b/ops/manifests/test.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/_run_tool.sh b/ops/scripts/_run_tool.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/config.sh b/ops/scripts/config.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/live-config.sh b/ops/scripts/live-config.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/manifest.sh b/ops/scripts/manifest.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/plugins.sh b/ops/scripts/plugins.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/server.sh b/ops/scripts/server.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/scripts/workbench.sh b/ops/scripts/workbench.sh
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/DecentHolograms/config.yml b/ops/templates/common/plugins/DecentHolograms/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/DecentHolograms/lang.yml b/ops/templates/common/plugins/DecentHolograms/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/config.yml b/ops/templates/common/plugins/EcoArmor/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/lang.yml b/ops/templates/common/plugins/EcoArmor/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/sets/_example.yml b/ops/templates/common/plugins/EcoArmor/sets/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/sets/angelic.yml b/ops/templates/common/plugins/EcoArmor/sets/angelic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/sets/huntress.yml b/ops/templates/common/plugins/EcoArmor/sets/huntress.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/sets/reaper.yml b/ops/templates/common/plugins/EcoArmor/sets/reaper.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/sets/slayer.yml b/ops/templates/common/plugins/EcoArmor/sets/slayer.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/_example.yml b/ops/templates/common/plugins/EcoArmor/tiers/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/ancient.yml b/ops/templates/common/plugins/EcoArmor/tiers/ancient.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/cobalt.yml b/ops/templates/common/plugins/EcoArmor/tiers/cobalt.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/default.yml b/ops/templates/common/plugins/EcoArmor/tiers/default.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/diamond.yml b/ops/templates/common/plugins/EcoArmor/tiers/diamond.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/exotic.yml b/ops/templates/common/plugins/EcoArmor/tiers/exotic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/iron.yml b/ops/templates/common/plugins/EcoArmor/tiers/iron.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/manyullyn.yml b/ops/templates/common/plugins/EcoArmor/tiers/manyullyn.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/mythic.yml b/ops/templates/common/plugins/EcoArmor/tiers/mythic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/netherite.yml b/ops/templates/common/plugins/EcoArmor/tiers/netherite.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoArmor/tiers/osmium.yml b/ops/templates/common/plugins/EcoArmor/tiers/osmium.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/_example.yml b/ops/templates/common/plugins/EcoCollections/collections/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/blaze.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/blaze.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/creeper.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/creeper.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/drowned.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/drowned.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/elder_guardian.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/elder_guardian.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/ender_dragon.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/ender_dragon.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/enderman.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/enderman.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/evoker.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/evoker.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/ghast.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/ghast.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/guardian.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/guardian.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/hoglin.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/hoglin.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/husk.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/husk.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/magma_cube.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/magma_cube.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/phantom.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/phantom.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/piglin.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/piglin.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/pillager.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/pillager.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/ravager.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/ravager.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/shulker.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/shulker.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/skeleton.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/skeleton.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/slime.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/slime.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/spider.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/spider.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/stray.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/stray.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/vindicator.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/vindicator.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/warden.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/warden.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/witch.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/witch.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/wither.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/wither.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/wither_skeleton.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/wither_skeleton.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/combat/zombie.yml b/ops/templates/common/plugins/EcoCollections/collections/combat/zombie.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/bamboo.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/bamboo.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/beetroot.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/beetroot.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/cactus.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/cactus.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/carrot.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/carrot.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/cocoa.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/cocoa.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/glow_berries.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/glow_berries.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/kelp.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/kelp.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/melon.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/melon.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/mushroom.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/mushroom.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/nether_wart.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/nether_wart.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/potato.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/potato.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/pumpkin.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/pumpkin.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/sea_pickle.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/sea_pickle.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/sugar_cane.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/sugar_cane.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/sweet_berries.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/sweet_berries.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/farming/wheat.yml b/ops/templates/common/plugins/EcoCollections/collections/farming/wheat.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/clownfish.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/clownfish.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/prismarine_shard.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/prismarine_shard.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/pufferfish.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/pufferfish.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/raw_fish.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/raw_fish.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/raw_salmon.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/raw_salmon.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/sponge.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/sponge.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/fishing/treasure.yml b/ops/templates/common/plugins/EcoCollections/collections/fishing/treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/acacia.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/acacia.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/birch.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/birch.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/cherry.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/cherry.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/crimson.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/crimson.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/dark_oak.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/dark_oak.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/jungle.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/jungle.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/mangrove.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/mangrove.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/oak.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/oak.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/pale_oak.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/pale_oak.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/spruce.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/spruce.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/foraging/warped.yml b/ops/templates/common/plugins/EcoCollections/collections/foraging/warped.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/amethyst.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/amethyst.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/ancient_debris.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/ancient_debris.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/calcite.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/calcite.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/coal.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/coal.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/cobblestone.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/cobblestone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/copper.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/copper.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/deepslate.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/deepslate.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/diamond.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/diamond.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/emerald.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/emerald.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/end_stone.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/end_stone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/glowstone.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/glowstone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/gold.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/gold.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/iron.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/iron.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/lapis.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/lapis.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/netherrack.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/netherrack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/obsidian.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/obsidian.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/quartz.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/quartz.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/redstone.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/redstone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/collections/mining/tuff.yml b/ops/templates/common/plugins/EcoCollections/collections/mining/tuff.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/config.yml b/ops/templates/common/plugins/EcoCollections/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/_example.yml b/ops/templates/common/plugins/EcoCollections/groups/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/combat.yml b/ops/templates/common/plugins/EcoCollections/groups/combat.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/farming.yml b/ops/templates/common/plugins/EcoCollections/groups/farming.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/fishing.yml b/ops/templates/common/plugins/EcoCollections/groups/fishing.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/foraging.yml b/ops/templates/common/plugins/EcoCollections/groups/foraging.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/groups/mining.yml b/ops/templates/common/plugins/EcoCollections/groups/mining.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoCollections/lang.yml b/ops/templates/common/plugins/EcoCollections/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/config.yml b/ops/templates/common/plugins/EcoEnchants/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/_example.yml b/ops/templates/common/plugins/EcoEnchants/enchants/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/abrasion.yml b/ops/templates/common/plugins/EcoEnchants/enchants/abrasion.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/adrenaline.yml b/ops/templates/common/plugins/EcoEnchants/enchants/adrenaline.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/arcane_defence.yml b/ops/templates/common/plugins/EcoEnchants/enchants/arcane_defence.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ascend.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ascend.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/aura.yml b/ops/templates/common/plugins/EcoEnchants/enchants/aura.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/blackout.yml b/ops/templates/common/plugins/EcoEnchants/enchants/blackout.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/blast_mining.yml b/ops/templates/common/plugins/EcoEnchants/enchants/blast_mining.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/bleed.yml b/ops/templates/common/plugins/EcoEnchants/enchants/bleed.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/block_breather.yml b/ops/templates/common/plugins/EcoEnchants/enchants/block_breather.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/boss_hunter.yml b/ops/templates/common/plugins/EcoEnchants/enchants/boss_hunter.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/breaklessness_curse.yml b/ops/templates/common/plugins/EcoEnchants/enchants/breaklessness_curse.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/brightness.yml b/ops/templates/common/plugins/EcoEnchants/enchants/brightness.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/caffeinated.yml b/ops/templates/common/plugins/EcoEnchants/enchants/caffeinated.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/carve.yml b/ops/templates/common/plugins/EcoEnchants/enchants/carve.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/charge.yml b/ops/templates/common/plugins/EcoEnchants/enchants/charge.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/confusion.yml b/ops/templates/common/plugins/EcoEnchants/enchants/confusion.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/contagion.yml b/ops/templates/common/plugins/EcoEnchants/enchants/contagion.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/criticals.yml b/ops/templates/common/plugins/EcoEnchants/enchants/criticals.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/cubism.yml b/ops/templates/common/plugins/EcoEnchants/enchants/cubism.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/dexterity.yml b/ops/templates/common/plugins/EcoEnchants/enchants/dexterity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/dynamite.yml b/ops/templates/common/plugins/EcoEnchants/enchants/dynamite.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecojobs/hard_worker.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecojobs/hard_worker.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecopets/petkeeper.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecopets/petkeeper.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/adventurer.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/adventurer.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/angler.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/angler.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/chemist.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/chemist.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/combatant.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/combatant.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/crit_luck.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/crit_luck.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/enriched_plating.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/enriched_plating.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/forceful_crit.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/forceful_crit.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/green_thumb.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/green_thumb.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/might.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/might.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/neptune.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/neptune.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/overload.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/overload.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/prospector.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/prospector.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/sorcery.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/sorcery.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/steel_string.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/steel_string.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/stimulating.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/stimulating.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/strongarm.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/strongarm.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/superior.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/superior.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/vicious.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/vicious.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/woodworker.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ecoskills/woodworker.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/end_affinity.yml b/ops/templates/common/plugins/EcoEnchants/enchants/end_affinity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ender_slayer.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ender_slayer.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/escape.yml b/ops/templates/common/plugins/EcoEnchants/enchants/escape.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/excavation.yml b/ops/templates/common/plugins/EcoEnchants/enchants/excavation.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/feather_step.yml b/ops/templates/common/plugins/EcoEnchants/enchants/feather_step.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/finishing.yml b/ops/templates/common/plugins/EcoEnchants/enchants/finishing.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/first_strike.yml b/ops/templates/common/plugins/EcoEnchants/enchants/first_strike.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/flashbang.yml b/ops/templates/common/plugins/EcoEnchants/enchants/flashbang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/foraging.yml b/ops/templates/common/plugins/EcoEnchants/enchants/foraging.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/fortitude.yml b/ops/templates/common/plugins/EcoEnchants/enchants/fortitude.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/frost.yml b/ops/templates/common/plugins/EcoEnchants/enchants/frost.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/getaway.yml b/ops/templates/common/plugins/EcoEnchants/enchants/getaway.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/goliath.yml b/ops/templates/common/plugins/EcoEnchants/enchants/goliath.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/harmlessness_curse.yml b/ops/templates/common/plugins/EcoEnchants/enchants/harmlessness_curse.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/haunting.yml b/ops/templates/common/plugins/EcoEnchants/enchants/haunting.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/hunger_curse.yml b/ops/templates/common/plugins/EcoEnchants/enchants/hunger_curse.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/infernal_touch.yml b/ops/templates/common/plugins/EcoEnchants/enchants/infernal_touch.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/introversion.yml b/ops/templates/common/plugins/EcoEnchants/enchants/introversion.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/jumpshot.yml b/ops/templates/common/plugins/EcoEnchants/enchants/jumpshot.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/lifesteal.yml b/ops/templates/common/plugins/EcoEnchants/enchants/lifesteal.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/lumberjack.yml b/ops/templates/common/plugins/EcoEnchants/enchants/lumberjack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/metabolism.yml b/ops/templates/common/plugins/EcoEnchants/enchants/metabolism.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/misfortune_curse.yml b/ops/templates/common/plugins/EcoEnchants/enchants/misfortune_curse.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/nether_affinity.yml b/ops/templates/common/plugins/EcoEnchants/enchants/nether_affinity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/nether_prospector.yml b/ops/templates/common/plugins/EcoEnchants/enchants/nether_prospector.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/ninja.yml b/ops/templates/common/plugins/EcoEnchants/enchants/ninja.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/one_for_all.yml b/ops/templates/common/plugins/EcoEnchants/enchants/one_for_all.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/permanence_curse.yml b/ops/templates/common/plugins/EcoEnchants/enchants/permanence_curse.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/poison_ivy.yml b/ops/templates/common/plugins/EcoEnchants/enchants/poison_ivy.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/rebounding.yml b/ops/templates/common/plugins/EcoEnchants/enchants/rebounding.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/repairing.yml b/ops/templates/common/plugins/EcoEnchants/enchants/repairing.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/replenish.yml b/ops/templates/common/plugins/EcoEnchants/enchants/replenish.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/rocket_saver.yml b/ops/templates/common/plugins/EcoEnchants/enchants/rocket_saver.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/rumble.yml b/ops/templates/common/plugins/EcoEnchants/enchants/rumble.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/shulker_harvest.yml b/ops/templates/common/plugins/EcoEnchants/enchants/shulker_harvest.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/shura.yml b/ops/templates/common/plugins/EcoEnchants/enchants/shura.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/skull_puncture.yml b/ops/templates/common/plugins/EcoEnchants/enchants/skull_puncture.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/slaughter.yml b/ops/templates/common/plugins/EcoEnchants/enchants/slaughter.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/slipstream.yml b/ops/templates/common/plugins/EcoEnchants/enchants/slipstream.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/snipe.yml b/ops/templates/common/plugins/EcoEnchants/enchants/snipe.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/soul_storm.yml b/ops/templates/common/plugins/EcoEnchants/enchants/soul_storm.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/soulbound.yml b/ops/templates/common/plugins/EcoEnchants/enchants/soulbound.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/sparks.yml b/ops/templates/common/plugins/EcoEnchants/enchants/sparks.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/stamina.yml b/ops/templates/common/plugins/EcoEnchants/enchants/stamina.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/streamlining.yml b/ops/templates/common/plugins/EcoEnchants/enchants/streamlining.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/stun.yml b/ops/templates/common/plugins/EcoEnchants/enchants/stun.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/telekinesis.yml b/ops/templates/common/plugins/EcoEnchants/enchants/telekinesis.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/thor.yml b/ops/templates/common/plugins/EcoEnchants/enchants/thor.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/thrive.yml b/ops/templates/common/plugins/EcoEnchants/enchants/thrive.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/transmission.yml b/ops/templates/common/plugins/EcoEnchants/enchants/transmission.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/tripleshot.yml b/ops/templates/common/plugins/EcoEnchants/enchants/tripleshot.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/vanish.yml b/ops/templates/common/plugins/EcoEnchants/enchants/vanish.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/veinminer.yml b/ops/templates/common/plugins/EcoEnchants/enchants/veinminer.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/vitality.yml b/ops/templates/common/plugins/EcoEnchants/enchants/vitality.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/warp_drive.yml b/ops/templates/common/plugins/EcoEnchants/enchants/warp_drive.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/wisdom.yml b/ops/templates/common/plugins/EcoEnchants/enchants/wisdom.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/wound.yml b/ops/templates/common/plugins/EcoEnchants/enchants/wound.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/wyvern.yml b/ops/templates/common/plugins/EcoEnchants/enchants/wyvern.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/enchants/xray.yml b/ops/templates/common/plugins/EcoEnchants/enchants/xray.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/lang.yml b/ops/templates/common/plugins/EcoEnchants/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/rarity.yml b/ops/templates/common/plugins/EcoEnchants/rarity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/targets.yml b/ops/templates/common/plugins/EcoEnchants/targets.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/types.yml b/ops/templates/common/plugins/EcoEnchants/types.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoEnchants/vanillaenchants.yml b/ops/templates/common/plugins/EcoEnchants/vanillaenchants.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/config.yml b/ops/templates/common/plugins/EcoItems/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/_example.yml b/ops/templates/common/plugins/EcoItems/items/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/_example_food.yml b/ops/templates/common/plugins/EcoItems/items/_example_food.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/_example_tool.yml b/ops/templates/common/plugins/EcoItems/items/_example_tool.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_cobblestone.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_cobblestone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_diamond.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_diamond.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_emerald.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_emerald.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_ender_eye.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_ender_eye.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_ender_pearl.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_ender_pearl.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_iron_ingot.yml b/ops/templates/common/plugins/EcoItems/items/enchanted_items/enchanted_iron_ingot.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/items/grappling_hook.yml b/ops/templates/common/plugins/EcoItems/items/grappling_hook.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/lang.yml b/ops/templates/common/plugins/EcoItems/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/_example.yml b/ops/templates/common/plugins/EcoItems/rarities/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/common.yml b/ops/templates/common/plugins/EcoItems/rarities/common.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/epic.yml b/ops/templates/common/plugins/EcoItems/rarities/epic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/legendary.yml b/ops/templates/common/plugins/EcoItems/rarities/legendary.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/mythic.yml b/ops/templates/common/plugins/EcoItems/rarities/mythic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/none.yml b/ops/templates/common/plugins/EcoItems/rarities/none.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/rare.yml b/ops/templates/common/plugins/EcoItems/rarities/rare.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/rarities/uncommon.yml b/ops/templates/common/plugins/EcoItems/rarities/uncommon.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/recipes/_example.yml b/ops/templates/common/plugins/EcoItems/recipes/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/recipes/enchanted_diamond_block_craft.yml b/ops/templates/common/plugins/EcoItems/recipes/enchanted_diamond_block_craft.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoItems/recipes/enchanted_emerald_block_craft.yml b/ops/templates/common/plugins/EcoItems/recipes/enchanted_emerald_block_craft.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/config.yml b/ops/templates/common/plugins/EcoSkills/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/_example.yml b/ops/templates/common/plugins/EcoSkills/effects/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/accelerated_escape.yml b/ops/templates/common/plugins/EcoSkills/effects/accelerated_escape.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/bountiful_harvest.yml b/ops/templates/common/plugins/EcoSkills/effects/bountiful_harvest.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/bravery.yml b/ops/templates/common/plugins/EcoSkills/effects/bravery.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/craftsmanship.yml b/ops/templates/common/plugins/EcoSkills/effects/craftsmanship.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/dazzle.yml b/ops/templates/common/plugins/EcoSkills/effects/dazzle.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/dodging.yml b/ops/templates/common/plugins/EcoSkills/effects/dodging.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/dynamic_mining.yml b/ops/templates/common/plugins/EcoSkills/effects/dynamic_mining.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/efficient_brewing.yml b/ops/templates/common/plugins/EcoSkills/effects/efficient_brewing.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/endangering.yml b/ops/templates/common/plugins/EcoSkills/effects/endangering.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/eye_of_the_depths.yml b/ops/templates/common/plugins/EcoSkills/effects/eye_of_the_depths.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/golden_yield.yml b/ops/templates/common/plugins/EcoSkills/effects/golden_yield.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/infernal_resistance.yml b/ops/templates/common/plugins/EcoSkills/effects/infernal_resistance.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/magnetic_rod.yml b/ops/templates/common/plugins/EcoSkills/effects/magnetic_rod.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/master_lumberjack.yml b/ops/templates/common/plugins/EcoSkills/effects/master_lumberjack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/mystic_resilience.yml b/ops/templates/common/plugins/EcoSkills/effects/mystic_resilience.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/overcompensation.yml b/ops/templates/common/plugins/EcoSkills/effects/overcompensation.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/potionmaster.yml b/ops/templates/common/plugins/EcoSkills/effects/potionmaster.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/reimbursement.yml b/ops/templates/common/plugins/EcoSkills/effects/reimbursement.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/satiation.yml b/ops/templates/common/plugins/EcoSkills/effects/satiation.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/seamless_movement.yml b/ops/templates/common/plugins/EcoSkills/effects/seamless_movement.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/second_chance.yml b/ops/templates/common/plugins/EcoSkills/effects/second_chance.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/serrated_strikes.yml b/ops/templates/common/plugins/EcoSkills/effects/serrated_strikes.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/shamanism.yml b/ops/templates/common/plugins/EcoSkills/effects/shamanism.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/spelunking.yml b/ops/templates/common/plugins/EcoSkills/effects/spelunking.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/strong_impact.yml b/ops/templates/common/plugins/EcoSkills/effects/strong_impact.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/effects/versatile_tools.yml b/ops/templates/common/plugins/EcoSkills/effects/versatile_tools.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/lang.yml b/ops/templates/common/plugins/EcoSkills/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/magic_types/_example.yml b/ops/templates/common/plugins/EcoSkills/magic_types/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/magic_types/mana.yml b/ops/templates/common/plugins/EcoSkills/magic_types/mana.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/_example.yml b/ops/templates/common/plugins/EcoSkills/skills/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/alchemy.yml b/ops/templates/common/plugins/EcoSkills/skills/alchemy.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/armory.yml b/ops/templates/common/plugins/EcoSkills/skills/armory.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/combat.yml b/ops/templates/common/plugins/EcoSkills/skills/combat.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/enchanting.yml b/ops/templates/common/plugins/EcoSkills/skills/enchanting.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/exploration.yml b/ops/templates/common/plugins/EcoSkills/skills/exploration.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/farming.yml b/ops/templates/common/plugins/EcoSkills/skills/farming.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/fishing.yml b/ops/templates/common/plugins/EcoSkills/skills/fishing.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/mining.yml b/ops/templates/common/plugins/EcoSkills/skills/mining.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/skills/woodcutting.yml b/ops/templates/common/plugins/EcoSkills/skills/woodcutting.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/_example.yml b/ops/templates/common/plugins/EcoSkills/stats/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/attack_speed.yml b/ops/templates/common/plugins/EcoSkills/stats/attack_speed.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/crit_chance.yml b/ops/templates/common/plugins/EcoSkills/stats/crit_chance.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/crit_damage.yml b/ops/templates/common/plugins/EcoSkills/stats/crit_damage.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/defense.yml b/ops/templates/common/plugins/EcoSkills/stats/defense.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/ferocity.yml b/ops/templates/common/plugins/EcoSkills/stats/ferocity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/health.yml b/ops/templates/common/plugins/EcoSkills/stats/health.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/speed.yml b/ops/templates/common/plugins/EcoSkills/stats/speed.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/strength.yml b/ops/templates/common/plugins/EcoSkills/stats/strength.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/EcoSkills/stats/wisdom.yml b/ops/templates/common/plugins/EcoSkills/stats/wisdom.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/HuskHomes/config.yml b/ops/templates/common/plugins/HuskHomes/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/HuskHomes/messages-en-gb.yml b/ops/templates/common/plugins/HuskHomes/messages-en-gb.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/config-general.yml b/ops/templates/common/plugins/MythicMobs/config/config-general.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/config-items.yml b/ops/templates/common/plugins/MythicMobs/config/config-items.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/config-mobs.yml b/ops/templates/common/plugins/MythicMobs/config/config-mobs.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/config-skills.yml b/ops/templates/common/plugins/MythicMobs/config/config-skills.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/config-spawning.yml b/ops/templates/common/plugins/MythicMobs/config/config-spawning.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/config/lang/en-us/mythicmobs.json b/ops/templates/common/plugins/MythicMobs/config/lang/en-us/mythicmobs.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/dialogs/ExampleDialogs.yml b/ops/templates/common/plugins/MythicMobs/dialogs/ExampleDialogs.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/droptables/ExampleDropTables.yml b/ops/templates/common/plugins/MythicMobs/droptables/ExampleDropTables.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/items/ExampleItems.yml b/ops/templates/common/plugins/MythicMobs/items/ExampleItems.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/mobs/ExampleMobs.yml b/ops/templates/common/plugins/MythicMobs/mobs/ExampleMobs.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/mobs/VanillaMobs.yml b/ops/templates/common/plugins/MythicMobs/mobs/VanillaMobs.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/placeholders.yml b/ops/templates/common/plugins/MythicMobs/placeholders.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/randomspawns/ExampleRandomSpawns.yml b/ops/templates/common/plugins/MythicMobs/randomspawns/ExampleRandomSpawns.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/skills/ExampleSkills.yml b/ops/templates/common/plugins/MythicMobs/skills/ExampleSkills.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/MythicMobs/stats.yml b/ops/templates/common/plugins/MythicMobs/stats.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/converter.yml b/ops/templates/common/plugins/Nexo/converter.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/glyphs/nexo_defaults/interface.yml b/ops/templates/common/plugins/Nexo/glyphs/nexo_defaults/interface.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/inventory.yml b/ops/templates/common/plugins/Nexo/inventory.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/items/nexo_defaults/gui_icons.yml b/ops/templates/common/plugins/Nexo/items/nexo_defaults/gui_icons.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_armor.yml b/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_armor.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_connectable.yml b/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_connectable.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_furniture.yml b/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_furniture.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_tools.yml b/ops/templates/common/plugins/Nexo/items/nexo_defaults/nexo_tools.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/languages.yml b/ops/templates/common/plugins/Nexo/languages.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/mechanics.yml b/ops/templates/common/plugins/Nexo/mechanics.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/messages/english.yml b/ops/templates/common/plugins/Nexo/messages/english.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/multipack.yml b/ops/templates/common/plugins/Nexo/multipack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/paintings.yml b/ops/templates/common/plugins/Nexo/paintings.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/recipes/disabled_recipes.yml b/ops/templates/common/plugins/Nexo/recipes/disabled_recipes.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/settings.yml b/ops/templates/common/plugins/Nexo/settings.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Nexo/sounds.yml b/ops/templates/common/plugins/Nexo/sounds.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/config.yml b/ops/templates/common/plugins/Reforges/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/lang.yml b/ops/templates/common/plugins/Reforges/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/_example.yml b/ops/templates/common/plugins/Reforges/reforges/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/acute.yml b/ops/templates/common/plugins/Reforges/reforges/acute.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/aerobic.yml b/ops/templates/common/plugins/Reforges/reforges/aerobic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/dynamic.yml b/ops/templates/common/plugins/Reforges/reforges/dynamic.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/evasive.yml b/ops/templates/common/plugins/Reforges/reforges/evasive.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/gravitated.yml b/ops/templates/common/plugins/Reforges/reforges/gravitated.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/light.yml b/ops/templates/common/plugins/Reforges/reforges/light.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/nautical.yml b/ops/templates/common/plugins/Reforges/reforges/nautical.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/pointy.yml b/ops/templates/common/plugins/Reforges/reforges/pointy.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/prospecting.yml b/ops/templates/common/plugins/Reforges/reforges/prospecting.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/reinforced.yml b/ops/templates/common/plugins/Reforges/reforges/reinforced.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/rich.yml b/ops/templates/common/plugins/Reforges/reforges/rich.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/sharp.yml b/ops/templates/common/plugins/Reforges/reforges/sharp.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/streamlined.yml b/ops/templates/common/plugins/Reforges/reforges/streamlined.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/strong.yml b/ops/templates/common/plugins/Reforges/reforges/strong.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/thin.yml b/ops/templates/common/plugins/Reforges/reforges/thin.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/reforges/tough.yml b/ops/templates/common/plugins/Reforges/reforges/tough.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Reforges/target.yml b/ops/templates/common/plugins/Reforges/target.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/config.sk b/ops/templates/common/plugins/Skript/config.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/features.sk b/ops/templates/common/plugins/Skript/features.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/catalan.lang b/ops/templates/common/plugins/Skript/lang/catalan.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/dutch.lang b/ops/templates/common/plugins/Skript/lang/dutch.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/english.lang b/ops/templates/common/plugins/Skript/lang/english.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/french.lang b/ops/templates/common/plugins/Skript/lang/french.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/german.lang b/ops/templates/common/plugins/Skript/lang/german.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/japanese.lang b/ops/templates/common/plugins/Skript/lang/japanese.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/korean.lang b/ops/templates/common/plugins/Skript/lang/korean.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/polish.lang b/ops/templates/common/plugins/Skript/lang/polish.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/readme.txt b/ops/templates/common/plugins/Skript/lang/readme.txt
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/russian.lang b/ops/templates/common/plugins/Skript/lang/russian.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/simplifiedchinese.lang b/ops/templates/common/plugins/Skript/lang/simplifiedchinese.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/spanish.lang b/ops/templates/common/plugins/Skript/lang/spanish.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/lang/turkish.lang b/ops/templates/common/plugins/Skript/lang/turkish.lang
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-- Files prefixed with a hyphen are disabled! -- b/ops/templates/common/plugins/Skript/scripts/-- Files prefixed with a hyphen are disabled! --
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/chest menus.sk b/ops/templates/common/plugins/Skript/scripts/-examples/chest menus.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/commands.sk b/ops/templates/common/plugins/Skript/scripts/-examples/commands.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/events.sk b/ops/templates/common/plugins/Skript/scripts/-examples/events.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/for loops.sk b/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/for loops.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/queues.sk b/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/queues.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/script reflection.sk b/ops/templates/common/plugins/Skript/scripts/-examples/experimental features/script reflection.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/functions.sk b/ops/templates/common/plugins/Skript/scripts/-examples/functions.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/loops.sk b/ops/templates/common/plugins/Skript/scripts/-examples/loops.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/options and meta.sk b/ops/templates/common/plugins/Skript/scripts/-examples/options and meta.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/text formatting.sk b/ops/templates/common/plugins/Skript/scripts/-examples/text formatting.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/timings.sk b/ops/templates/common/plugins/Skript/scripts/-examples/timings.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Skript/scripts/-examples/variables.sk b/ops/templates/common/plugins/Skript/scripts/-examples/variables.sk
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/config.yml b/ops/templates/common/plugins/Talismans/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/lang.yml b/ops/templates/common/plugins/Talismans/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/_example.yml b/ops/templates/common/plugins/Talismans/talismans/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/archery_1.yml b/ops/templates/common/plugins/Talismans/talismans/archery_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/archery_2.yml b/ops/templates/common/plugins/Talismans/talismans/archery_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/archery_3.yml b/ops/templates/common/plugins/Talismans/talismans/archery_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/attack_speed_1.yml b/ops/templates/common/plugins/Talismans/talismans/attack_speed_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/attack_speed_2.yml b/ops/templates/common/plugins/Talismans/talismans/attack_speed_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/attack_speed_3.yml b/ops/templates/common/plugins/Talismans/talismans/attack_speed_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/boss_1.yml b/ops/templates/common/plugins/Talismans/talismans/boss_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/boss_2.yml b/ops/templates/common/plugins/Talismans/talismans/boss_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/boss_3.yml b/ops/templates/common/plugins/Talismans/talismans/boss_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/experience_1.yml b/ops/templates/common/plugins/Talismans/talismans/experience_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/experience_2.yml b/ops/templates/common/plugins/Talismans/talismans/experience_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/immunity.yml b/ops/templates/common/plugins/Talismans/talismans/immunity.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/necrosis.yml b/ops/templates/common/plugins/Talismans/talismans/necrosis.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/poseidon_1.yml b/ops/templates/common/plugins/Talismans/talismans/poseidon_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/poseidon_2.yml b/ops/templates/common/plugins/Talismans/talismans/poseidon_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/poseidon_3.yml b/ops/templates/common/plugins/Talismans/talismans/poseidon_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/resistance_1.yml b/ops/templates/common/plugins/Talismans/talismans/resistance_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/resistance_2.yml b/ops/templates/common/plugins/Talismans/talismans/resistance_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/resistance_3.yml b/ops/templates/common/plugins/Talismans/talismans/resistance_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/sharpness_1.yml b/ops/templates/common/plugins/Talismans/talismans/sharpness_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/sharpness_2.yml b/ops/templates/common/plugins/Talismans/talismans/sharpness_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/sharpness_3.yml b/ops/templates/common/plugins/Talismans/talismans/sharpness_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/strength_1.yml b/ops/templates/common/plugins/Talismans/talismans/strength_1.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/strength_2.yml b/ops/templates/common/plugins/Talismans/talismans/strength_2.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/Talismans/talismans/strength_3.yml b/ops/templates/common/plugins/Talismans/talismans/strength_3.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/eco/config.yml b/ops/templates/common/plugins/eco/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/eco/lang.yml b/ops/templates/common/plugins/eco/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/arguments/_example.yml b/ops/templates/common/plugins/libreforge/arguments/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/chains.yml b/ops/templates/common/plugins/libreforge/chains.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/commands.yml b/ops/templates/common/plugins/libreforge/commands.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/config.yml b/ops/templates/common/plugins/libreforge/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/lang.yml b/ops/templates/common/plugins/libreforge/lang.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/levels/_example.yml b/ops/templates/common/plugins/libreforge/levels/_example.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/placeholders.yml b/ops/templates/common/plugins/libreforge/placeholders.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/common/plugins/libreforge/tags.yml b/ops/templates/common/plugins/libreforge/tags.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/ValidWorlds.yml b/ops/templates/survival/plugins/BetterStructures/ValidWorlds.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/config.yml b/ops/templates/survival/plugins/BetterStructures/config.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/101_premium_shrines.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/101_premium_shrines.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/103_default_structures.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/103_default_structures.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/adventure_pack.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/adventure_pack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/caves_and_lost_civilizations_free.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/caves_and_lost_civilizations_free.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/caves_and_lost_civilizations_premium.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/caves_and_lost_civilizations_premium.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/dungeoneering_modules_free.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/dungeoneering_modules_free.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/dungeoneering_modules_premium.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/dungeoneering_modules_premium.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/echoes_of_the_past.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/echoes_of_the_past.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/exploration_pack.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/exploration_pack.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/content_packages/free_elite_shrines.yml b/ops/templates/survival/plugins/BetterStructures/content_packages/free_elite_shrines.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_liquid_nether.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_liquid_nether.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_liquid_overworld.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_liquid_overworld.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_barren.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_barren.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_crimson_forest.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_crimson_forest.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_desert.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_desert.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_end.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_end.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_global.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_global.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_grassland.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_grassland.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_nether.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_nether.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_nether_wastes.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_nether_wastes.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_snowy.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_snowy.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_soul_sand.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_soul_sand.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_warped_forest.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_sky_warped_forest.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_barren.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_barren.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_desert.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_desert.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_end.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_end.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_global.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_global.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_grassland.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_grassland.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_nether.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_nether.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_snowy.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_surface_snowy.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_deep.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_deep.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_dripstone.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_dripstone.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_end.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_end.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_global.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_global.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_lush.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_lush.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether_deep.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether_deep.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether_shallow.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_nether_shallow.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_shallow.yml b/ops/templates/survival/plugins/BetterStructures/generators/generator_underground_shallow.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/module_generators/dungeoneering_module_generator.yml b/ops/templates/survival/plugins/BetterStructures/module_generators/dungeoneering_module_generator.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/.nb_rsp_checksum_v2 b/ops/templates/survival/plugins/BetterStructures/resource_pack/.nb_rsp_checksum_v2
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/minecraft/font/default.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/minecraft/font/default.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/checkmark.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/checkmark.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/gray_x.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/gray_x.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/lockedunlinked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/lockedunlinked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/lockedunpaid.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/lockedunpaid.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/redcross.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/redcross.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/unlocked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/unlocked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/update.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/update.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/updateunlinked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/updateunlinked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/updateunpaid.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/updateunpaid.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/yellowcrown.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/items/ui/yellowcrown.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/checkmark.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/checkmark.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/gray_x.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/gray_x.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/lockedunlinked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/lockedunlinked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/lockedunpaid.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/lockedunpaid.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/redcross.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/redcross.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/unlocked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/unlocked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/update.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/update.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/updateunlinked.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/updateunlinked.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/updateunpaid.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/updateunpaid.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/yellowcrown.json b/ops/templates/survival/plugins/BetterStructures/resource_pack/nightbreak_rsp_defaults/assets/nightbreak/models/ui/yellowcrown.json
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/schematics/ReadMe.txt b/ops/templates/survival/plugins/BetterStructures/schematics/ReadMe.txt
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_barrel_food.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_barrel_food.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_end.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_end.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_nether.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_nether.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_overworld_surface.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_overworld_surface.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_overworld_underground.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_overworld_underground.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/treasure_special.yml b/ops/templates/survival/plugins/BetterStructures/treasures/treasure_special.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_bastion_treasure.yml b/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_bastion_treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_buried_treasure.yml b/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_buried_treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_end_city_treasure.yml b/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_end_city_treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_fishing_treasure.yml b/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_fishing_treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_shipwreck_treasure.yml b/ops/templates/survival/plugins/BetterStructures/treasures/vanilla_shipwreck_treasure.yml
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/config_tool.py b/ops/tools/config_tool.py
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/live_config_tool.py b/ops/tools/live_config_tool.py
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/manifest_tool.py b/ops/tools/manifest_tool.py
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/plugins_tool.py b/ops/tools/plugins_tool.py
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/server_tool.py b/ops/tools/server_tool.py
+old mode 100644
+new mode 100755
+diff --git a/ops/tools/workbench_tool.py b/ops/tools/workbench_tool.py
+old mode 100644
+new mode 100755
